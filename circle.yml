@@ -3,5 +3,6 @@ general:
     - "dist" # relative to the build directory
 test:
   post:
-    - lein dist
+    - lein less once
+    - lein cljsbuild once production
 
