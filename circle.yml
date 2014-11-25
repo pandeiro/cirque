@@ -4,3 +4,5 @@ general:
 test:
   pre:
     - lein dist
+    environment:
+      PRODUCTION=true
