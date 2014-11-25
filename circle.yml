@@ -3,7 +3,7 @@ general:
     - "dist" # relative to the build directory
 test:
   override:
-    - lein dist
+    - lein dist:
       environment:
         PRODUCTION: true
 
