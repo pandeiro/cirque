@@ -2,8 +2,8 @@ general:
   artifacts:
     - "dist" # relative to the build directory
 test:
-  override:
+  post:
     - lein dist:
       environment:
-        PRODUCTION: true
+        PRODUCTION=true
 
