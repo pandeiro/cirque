@@ -16,7 +16,8 @@
 
   :plugins [[lein-cljsbuild "1.0.4-SNAPSHOT"]
             [lein-ring "0.8.13"]
-            [lein-pdo "0.1.1"]]
+            [lein-pdo "0.1.1"]
+            [lein-less "1.7.2"]]
 
   :resources-paths ["app"]
 
@@ -25,6 +26,10 @@
 
   :repl-options {:init-ns cirque.dev.repl}
 
+  :less
+  {:source-paths ["app/styles"]
+   :target-path "dist/styles.css"
+   :compress true}
   :cljsbuild
   {:builds [{:id           "dev"
              :source-paths ["src/clj" "src/cljs"]
@@ -45,4 +50,7 @@
   :aliases {"dev" ["pdo"
                    ["cljsbuild" "clean"]
                    ["cljsbuild" "auto" "dev"]
-                   ["ring" "server-headless"]]})
+                   ["ring" "server-headless"]]
+            "dist" ["do"
+                    ["less" "once"]
+                    ["run" "-m" "cirque.dev.html"]]})
