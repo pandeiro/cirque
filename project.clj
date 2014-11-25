@@ -29,8 +29,7 @@
 
   :less
   {:source-paths ["app/styles"]
-   :target-path "dist"
-   :compress true}
+   :target-path "dist"}
   :cljsbuild
   {:builds [{:id           "dev"
              :source-paths ["src/clj" "src/cljs"]
