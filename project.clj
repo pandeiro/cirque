@@ -53,4 +53,5 @@
                    ["ring" "server-headless"]]
             "dist" ["do"
                     ["less" "once"]
-                    ["run" "-m" "cirque.dev.html"]]})
+                    ["run" "-m" "cirque.dev.html"]
+                    ["cljsbuild" "once" "production"]]})
