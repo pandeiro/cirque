@@ -17,7 +17,8 @@
   :plugins [[lein-cljsbuild "1.0.4-SNAPSHOT"]
             [lein-ring "0.8.13"]
             [lein-pdo "0.1.1"]
-            [lein-less "1.7.2"]]
+            [lein-less "1.7.2"]
+            [lein-environ "1.0.0"]]
 
   :resources-paths ["app"]
 
