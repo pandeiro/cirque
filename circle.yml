@@ -3,7 +3,5 @@ general:
     - "dist" # relative to the build directory
 test:
   post:
-    - lein dist:
-      environment:
-        PRODUCTION=true
+    - lein dist
 
