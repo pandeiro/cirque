@@ -1,3 +1,6 @@
 general:
   artifacts:
     - "dist" # relative to the build directory
+test:
+  pre:
+    - lein dist
