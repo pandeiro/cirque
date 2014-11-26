@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "dist" # relative to the build directory
+    - "dist/" # relative to the build directory
 test:
   post:
     - make
