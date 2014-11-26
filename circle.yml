@@ -3,5 +3,5 @@ general:
     - "dist" # relative to the build directory
 test:
   post:
-    - ./bin/make-dist
+    - make
 
